@@ -1,0 +1,76 @@
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+body{
+    font-family: 'Merriweather', serif;
+}
+.contain{
+    margin: 0 auto;
+    width: 720px;
+}
+
+.logo{
+    text-align: center;
+    margin: 3vh;
+}
+
+.logo img{
+    width: 35vh;
+}
+
+#linea-1{
+    margin: 0px;
+    border: solid 1px;
+    color: rgb(235, 209, 125);
+}
+
+.logo-text{
+    text-align: center;
+    color: rgb(21, 85, 74);
+    background-color: bisque;
+    padding: 1vh;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.titolo{
+    margin: 10vh 0 2vh;
+    font-family: 'Merriweather', serif;
+}
+
+.titolo h1{
+    text-align: center;
+    font-size: 6vh;
+}
+
+.description{
+    margin: 5vh 0 2vh;
+}
+
+.focaccia{
+    text-align: center;
+}
+
+.focaccia p{
+    color: rgb(150, 150, 150);
+}
+
+.focaccia img{
+    width: 116vh;
+    border-radius: 15px;
+}
+
+#list-1{
+    list-style-type: none;
+    padding-left: 0;
+    color: red;
+}
+
+#linea-2{
+    color: rgb(182, 252, 228);
+    border: solid 1px;
+}
+
+#linea-3{
+    color: rgb(182, 252, 228);
+    border: solid 1px;
+}
