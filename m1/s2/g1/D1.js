@@ -81,3 +81,5 @@ console.log(name1 != name2);
 //EXTRA
 let result = name2.toLowerCase();
 console.log(name1 == name2);
+
+//</script>
