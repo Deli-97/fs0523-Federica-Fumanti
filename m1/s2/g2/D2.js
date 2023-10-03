@@ -11,9 +11,10 @@ console.log(n)// il numero più grande è 20.
 */
 let num = 10
 
-if(num != 5)
-console.log('not equal');
-else console.log('equal')
+if(num != 5){
+  console.log('not equal');
+} else {console.log('equal');
+}
 //true, il numero 10  è effettivamente diverso da 5.
 
 /* ESERCIZIO 3
@@ -29,10 +30,11 @@ console.log('number: ' + number);
 let c = 8;
 let d = 2;
 
-if(c == 8)
-console.log('true');
-
-
+if(c == 8){
+  console.log('true');
+} else{
+  console.log("false");
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -40,10 +42,10 @@ console.log('true');
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-let totalShoppingCart = 50;
+let totalShoppingCart = 0;
   if (totalShoppingCart > 50) {
     console.log('ha diritto alla spedizione gratuita');
-    } else{(totalShoppingCart <= 50)
+    } else{
       console.log('la spedizione ha un costo fisso pari a 10')
   }
 
@@ -87,12 +89,12 @@ else console.log('Numero pari');
 */
   
 let val = 7
-if (val < 10) {
-console.log("7 < 10"); //true
-} else if (val < 5) {
-console.log("7 < 5"); //false
+if (val < 5) {
+console.log('Meno di 5'); //true
+} else if (val < 10) {
+console.log('Meno di 10'); //false
 } else {
-console.log("7 >= 10"); //false
+console.log('Uguale a 10 o maggiore'); //false
 }
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -103,7 +105,8 @@ const me = {
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
-
+me.city = 'Toronto'
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
@@ -115,7 +118,7 @@ delete me.lastName;
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-delete me.skills;
+me.skills.pop()
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
@@ -130,3 +133,4 @@ console.log(array)
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 array[9] = 100;
+console.log(array)
