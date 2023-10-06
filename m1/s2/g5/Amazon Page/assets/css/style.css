@@ -25,9 +25,11 @@ nav ul {
     list-style-type: none;
 }
 
+li a{
+    color: white;
+}
 nav li{
     margin: 0 20px;
-    color: white;
 }
 
 main{
@@ -133,6 +135,9 @@ main{
     background-color: #123f64;
     text-align: center;
     padding: 20px 0 20px;
+}
+
+#link-back a{
     color: white;
 }
 
