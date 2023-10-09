@@ -3,15 +3,11 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log(). */
 
 function concatenazione(stringa1,stringa2){
-  let primiDueCaratteri = stringa1.slice(0,2);
-  let ultimiDueCaratteri = stringa2.slice(-3)
-  let risultato = (primiDueCaratteri + ultimiDueCaratteri).toUpperCase();
-
-  console.log(risultato);
+  stringa1 = stringa1.slice(0,2);
+  stringa2 = stringa2.slice(-3);
+  return (stringa1 + stringa2).toUpperCase();
 }
-let stringa1 = 'Ciao';
-let stringa2 = 'Arrivederci';
-concatenazione(stringa1,stringa2);
+console.log(concatenazione('Ciao', 'Arrivederci'))
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
