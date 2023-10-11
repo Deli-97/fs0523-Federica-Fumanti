@@ -105,8 +105,8 @@
       */
 
       const changePcontent = function () {
-        let newTest = document.querySelector('p')
-        newTest.innerHTML = 'Nuovo paragrafo'
+        let newTest = document.querySelectorAll('div p')
+        newTest.forEach((p) => p.innerText = 'Nuovo Paragrafo')
       }
       changePcontent()
 
@@ -170,12 +170,13 @@
       */
 
       const makeItClickable = function () {
-        let remove = document.querySelector('h1')
-        remove.addEventListener('click', function(){
-          
-        }
+        let lastLetter = document.querySelector('h1')
+        lastLetter.addEventListener('click', function(){
+        
+        })
       }
-
+      makeItClickable
+      
       /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
