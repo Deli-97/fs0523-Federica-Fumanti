@@ -1,0 +1,31 @@
+.content{
+    font-family: 'Gabarito', sans-serif;
+    background-color: #ffffff;
+}
+
+.tabellone{
+    height: 500px;
+    padding-top: 20px;
+    background-color: #8181f1;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    border-radius: 30px;
+    background: rgb(107,32,255);
+    background: linear-gradient(90deg, rgba(107,32,255,1) 30%, rgba(66,79,162,1) 82%);
+    
+}
+
+.celle{
+    flex: 0 1 calc(100% / 10);
+    text-align: center;
+}
+
+h1{
+    font-weight: 700;
+    text-align: center;
+    font-size: 4em;
+    background: rgb(107,32,255);
+
+}

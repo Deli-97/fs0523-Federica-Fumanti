@@ -1,31 +1,28 @@
-let testo = document.getElementById('testo');
-let newTask = document.getElementById('new-task');
-let target = document.getElementById('target');
+let testo = document.getElementById('.testo');
+let btn = document.getElementById('.new-task');
 
+btn.addEventListener('click', function(){
 
-newTask.addEventListener('click', function(){
-
-    let target = document.getElementById('target');
-    let input = document.getElementById('testo');
+    let olList = document.getElementById('.target');
+    let inputText = document.getElementById('.testo');
 
     let li = document.createElement('li');
-    li.classList.add('list-item');
-    li.innerText = input.value;
+    li.innerText = inputText.value;
+
     li.addEventListener('click', function(){
         li.style.textDecoration = 'line-through'
     })
 
-    target.append(li)
+    olList.append(li)
 })
 
 let deleteTask = document.createElement('button');
-deleteTask.textContent = 'Elimina';
+deleteTask.innerText = 'Elimina';
 deleteTask.addEventListener('click',function(){
-    li.style.textDecoration = 'line-through';
-    deleteTask.remove()
+    li.remove()
 
     li.append(deleteTask);
-    target.append(li);
+    olList.append(li);
 
     testo.value = '';
 })
