@@ -12,7 +12,16 @@ console.log(concatenazione('Ciao', 'Arrivederci'))
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-
+ function arrCasuale(){
+  let result= [];
+  for(let i = 0; i < 10; i++){
+    let numCasuale = Math.floor(Math.random()* 101);
+  result.push(numCasuale)
+  }
+  return result;
+ }
+ let arrayCasuale = arrCasuale()
+ console.log(arrayCasuale)
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
@@ -199,6 +208,17 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+function findOldestFilm(movies){
+  let OldestFilm = null;
+  movies.forEach(function(film){
+    if(!OldestFilm || film.Year < OldestFilm.Year){
+      OldestFilm = film;
+    }
+  });
+  return OldestFilm;
+}
+let OldestFilm = findOldestFilm(movies)
+console.log(OldestFilm)
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
