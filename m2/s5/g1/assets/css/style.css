@@ -188,6 +188,9 @@ footer a {
     .header-logo p{
         font-size: 1.8rem;
     }
+    article{
+        font-size: 1.7rem;
+    }
     h1{
         font-size: 4.3rem;
         line-height: 1.3em;
@@ -220,7 +223,7 @@ footer a {
         width: 40%;
         text-align: right;
     }
-        article{
+    article{
         font-size: 1.9rem;
     }
     aside{
