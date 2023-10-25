@@ -1,0 +1,88 @@
+body{
+    font-family: sans-serif;
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100vh;
+}
+
+img{
+    max-width: 100%;
+}
+
+.card-container{
+    background-image: url(../imgs/honey.jpg);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 200px;
+    width: 240px;
+    background-size: cover;
+    background-position: center;
+}
+
+.description-container{
+    width: 240px;
+    height: 115px;
+    background-color: #fbf7e3;
+    margin-top: 2px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#p-bold{
+    font-weight: bold;
+    color: #612406;;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#paragraph, #price, #btn-cart{
+    color: #612406;
+}
+
+#btn-cart{
+    background-color: #f3df85;
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 125px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#btn-cart:hover{
+    opacity: 1;
+}
+
+.description{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#price{
+    margin-top: 19px;
+    font-size: 17px;
+}
+
+.btn-cart-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.p-bold-container{
+    order: 1;
+    text-align: center;
+}
+
