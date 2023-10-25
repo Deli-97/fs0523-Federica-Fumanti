@@ -23,12 +23,13 @@ section h2{
 
 .side-img{
     background-image: url(../img/honey.jpg);
-    width: 450px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
     background-size: cover;
     background-position: center;
     float: left;
     margin-right: 15px;
+    margin-top: 15px;
 }
 
 .text-news{
@@ -43,5 +44,5 @@ section h2{
 }
 
 .text-news p{
-    font-size: 1.1em;
+    font-size: 1em;
 }
