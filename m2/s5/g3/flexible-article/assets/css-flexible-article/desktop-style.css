@@ -9,10 +9,16 @@ img{
     max-width: 100%;
 }
 
+section h2{
+    font-size: 2em;
+    font-weight: 700;
+}
 .news-container{
     background-color: #fbf7e3;
     padding: 15px;
     height: 300px;
+    margin-top: 10px;
+    border-radius: 15px;
 }
 
 .side-img{
