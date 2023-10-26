@@ -1,0 +1,66 @@
+:root {
+    --giallo: #ededb9;
+    --verde: #c5f3c5;
+    --viola: #c0bfe9;
+}
+
+body{
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+.background{
+    background-color: rgb(134, 134, 134);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.background div{
+    display: flex;
+    width: calc(25% - 40px);
+    height: 230px;
+    text-align: center;
+    box-shadow: 10px 9px 3px -3px rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.background h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.background p{
+    font-size: 1.5em;
+}
+
+.yellow{
+    background-image: linear-gradient(var(--giallo) 0%, var(--giallo) 75%, #bdbda3 98%, #bdbda3 100%);
+    transform: rotate(355deg);
+}
+
+.green{
+    background-image: linear-gradient(var(--verde) 0%, var(--verde) 75%, #a1b8a1 98%, #a1b8a1 100%);
+    transform: rotate(5deg);
+}
+
+.green-task-4{
+    background-image: linear-gradient(var(--verde) 0%, var(--verde) 75%, #a1b8a1 98%, #a1b8a1 100%);
+    transform: rotate(10deg);
+}
+
+.violet{
+    background-image: linear-gradient(var(--viola) 0%, var(--viola) 75%, #8b8c9b 98%, #8b8c9b 100%);
+    transform: rotate(355deg);
+}
+
+.background div:hover{
+    transform: scale(1.1);
+}
