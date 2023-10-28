@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Martel+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Medium - Where good ideas find you.</title>
 </head>
 <body>
     <header id="header-1" class="header">
-            <nav class="nav">
-                <div class="logo"></div>
-                <ul class="link-header">
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">Write</a></li>
-                    <li><a href="#">Sign In</a></li>
-                    <li><a id="get-started" class="default-style" href="#">Get started</a></li>
-                </ul>
-            </nav>
+            <div class="header-conteiner">
+                <img src="assets/imgs/svg/logo.svg" alt="">
+                <nav class="nav-container">
+                    <ul class="link-header">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Write</a></li>
+                        <li><a href="#">Sign In</a></li>
+                    </ul>
+                    <button id="get-started" class="default-style">Get started</button>
+                </nav>
+            </div>
     </header>
 
     <div class="hero-container">
@@ -35,164 +37,297 @@
     <!--_______________MAIN___________________-->
 
     <main>
-
-        <div class="img-trending-container">
-            <img src="assets/imgs/svg/trending.svg" alt="">
-            <p>Trending on Medium</p>
-        </div>
-        <section class="column">
-            <article>
-                    <div class="box-1">
-                        <div class="num-1">
-                            <span>01</span>
-                        </div>
-                        <div class="link-text">
-                            <div class="tooltip">
-                                <img src="assets/imgs/image09.jpeg" alt="">
-                                <a href="#">Isaac Saul</a>
-                                <div class="tooltiptext">
+        <div class="main-container">
+            <div class="column">
+                <article>
+                    <div class="img-trending-container">
+                        <img src="assets/imgs/svg/trending.svg" alt="">
+                        <h2>Trending on Medium</h2>
+                    </div>
+                        <div class="box-1">
+                            <div class="num-1">
+                                <span>01</span>
+                            </div>
+                            <div class="link-text">
+                                <div class="tooltip">
                                     <img src="assets/imgs/image09.jpeg" alt="">
                                     <a href="#">Isaac Saul</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur - <a href="#">www.google.it</a></p>
-                                    <hr>
-                                    <div class="box-follower">
-                                        <p>905 followers</p>
-                                        <a id="follow" href="#">follow</a>                                        
-                                    </div>
-                                </div>     
-                            </div>
-                            <div class="lorem-box-1">
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <span>Oct 12 &#183; 11 min read</span>                            
+                                    <div class="tooltiptext">
+                                        <img src="assets/imgs/image09.jpeg" alt="">
+                                        <a href="#">Isaac Saul</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur - <a href="#">www.google.it</a></p>
+                                        <hr>
+                                        <div class="box-follower">
+                                            <p>905 followers</p>
+                                            <a id="follow" href="#">follow</a>                                        
+                                        </div>
+                                    </div>     
+                                </div>
+                                <div class="lorem-box-1">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                    <span>Oct 12 &#183; 11 min read</span>                            
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </article>
-
-            <article>
-                    <div class="box-2">
-                        <div class="num-2">
-                            <span>02</span>
-                        </div>
-                        <div class="link-text">
-                            <div class="tooltip">
-                                <img src="assets/imgs/image01.jpeg" alt="">
-                                <a href="#">Isaac Saul</a>
-                                <div class="tooltiptext">
+                </article>
+    
+                <article>
+                        <div class="box-2">
+                            <div class="num-2">
+                                <span>02</span>
+                            </div>
+                            <div class="link-text">
+                                <div class="tooltip">
                                     <img src="assets/imgs/image01.jpeg" alt="">
                                     <a href="#">Isaac Saul</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
-                                </div>   
-                            </div>
-                            <div class="lorem-box-1">
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <span>Oct 12 &#183; 11 min read</span>                            
+                                    <div class="tooltiptext">
+                                        <img src="assets/imgs/image01.jpeg" alt="">
+                                        <a href="#">Isaac Saul</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
+                                    </div>   
+                                </div>
+                                <div class="lorem-box-1">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                    <span>Oct 12 &#183; 11 min read</span>                            
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </article>
-
-            <article>
-                </div>
-                    <div class="box-3">
-                        <div class="num-3">
-                            <span>03</span>
-                        </div>
-                        <div class="link-text">
-                            <div class="tooltip">
-                                <img src="assets/imgs/image02.png" alt="">
-                                <a href="#">Isaac Saul</a>
-                                <div class="tooltiptext">
+                </article>
+    
+                <article>
+                        <div class="box-3">
+                            <div class="num-3">
+                                <span>03</span>
+                            </div>
+                            <div class="link-text">
+                                <div class="tooltip">
                                     <img src="assets/imgs/image02.png" alt="">
                                     <a href="#">Isaac Saul</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
-                                </div>   
-                            </div>
-                            <div class="lorem-box-1">
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <span>Oct 12 &#183; 11 min read</span>                            
+                                    <div class="tooltiptext">
+                                        <img src="assets/imgs/image02.png" alt="">
+                                        <a href="#">Isaac Saul</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
+                                    </div>   
+                                </div>
+                                <div class="lorem-box-1">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                    <span>Oct 12 &#183; 11 min read</span>                            
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </article>
-
-            <article>
-                    <div class="box-4">
-                        <div class="num-4">
-                            <span>04</span>
-                        </div>
-                        <div class="link-text">
-                            <div class="tooltip">
-                                <img src="assets/imgs/image03.jpeg" alt="">
-                                <a href="#">Isaac Saul</a>
-                                <div class="tooltiptext">
+                </article>
+    
+                <article>
+                        <div class="box-4">
+                            <div class="num-4">
+                                <span>04</span>
+                            </div>
+                            <div class="link-text">
+                                <div class="tooltip">
                                     <img src="assets/imgs/image03.jpeg" alt="">
                                     <a href="#">Isaac Saul</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
-                                </div>      
-                            </div>
-                            <div class="lorem-box-1">
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <span>Oct 12 &#183; 11 min read</span>                            
+                                    <div class="tooltiptext">
+                                        <img src="assets/imgs/image03.jpeg" alt="">
+                                        <a href="#">Isaac Saul</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
+                                    </div>      
+                                </div>
+                                <div class="lorem-box-1">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                    <span>Oct 12 &#183; 11 min read</span>                            
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </article>
-
-            <article>
-                    <div class="box-5">
-                        <div class="num-5">
-                            <span>05</span>
-                        </div>
-                        <div class="link-text">
-                            <div class="tooltip">
-                                <img src="assets/imgs/image05.jpeg" alt="">
-                                <a href="#">Isaac Saul</a>
-                                <div class="tooltiptext">
+                </article>
+    
+                <article>
+                        <div class="box-5">
+                            <div class="num-5">
+                                <span>05</span>
+                            </div>
+                            <div class="link-text">
+                                <div class="tooltip">
                                     <img src="assets/imgs/image05.jpeg" alt="">
                                     <a href="#">Isaac Saul</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
-                                </div>    
-                            </div>
-                            <div class="lorem-box-1">
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <span>Oct 12 &#183; 11 min read</span>                            
+                                    <div class="tooltiptext">
+                                        <img src="assets/imgs/image05.jpeg" alt="">
+                                        <a href="#">Isaac Saul</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
+                                    </div>    
+                                </div>
+                                <div class="lorem-box-1">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                    <span>Oct 12 &#183; 11 min read</span>                            
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </article>
-
-            <article>
-                    <div class="box-6">
-                        <div class="num-6">
-                            <span>06</span>
-                        </div>
-                        <div class="link-text">
-                            <div class="tooltip">
-                                <img src="assets/imgs/image06.png" alt="">
-                                <a href="#">Isaac Saul</a>
-                                <div class="tooltiptext">
+                </article>
+    
+                <article>
+                        <div class="box-6">
+                            <div class="num-6">
+                                <span>06</span>
+                            </div>
+                            <div class="link-text">
+                                <div class="tooltip">
                                     <img src="assets/imgs/image06.png" alt="">
                                     <a href="#">Isaac Saul</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
-                                </div>   
-                            </div>
-                            <div class="lorem-box-1">
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <span>Oct 12 &#183; 11 min read</span>                            
+                                    <div class="tooltiptext">
+                                        <img src="assets/imgs/image06.png" alt="">
+                                        <a href="#">Isaac Saul</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
+                                    </div>   
+                                </div>
+                                <div class="lorem-box-1">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                    <span>Oct 12 &#183; 11 min read</span>                            
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </article>
-        </section>
+                </article>
+            </div>
+
+        </div>
         
     </main>
+
+    <!--_________ARTICOLI________-->
+    <hr>
+    <div class="container">
+        <div class="section-container">
+            <div class="post-container">
+                <div class="autore">
+                    <div class="link-autore">
+                        <img src="assets/imgs/image06.png" alt="">
+                        <a href="#">Isaac Saul</a>                    
+                    </div>
+                        <!--<div class="tooltiptext">
+                            <img src="assets/imgs/image06.png" alt="">
+                            <a href="#">Isaac Saul</a>
+                            <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
+                            </div>-->
+    
+                            <div class="lorem-box-7s">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, lorem ipsum dolor sit</p>
+                                <div class="read">
+                                    <div>
+                                        <p>Oct 12 &#183; 11 min read</p>
+                                    </div>
+                                    <div>
+                                        <p>&#183;</p>
+                                    </div>
+                                    <div>
+                                        <a class="polarization" href="#">Polarization</a>
+                                    </div>             
+                                </div>
+                                <div class="icona-container">
+                                    <a class="icona" href="#"></a>  
+                                </div>
+                            </div>
+                </div>
+                <div class="img-post"></div>
+            </div>
+    
+            <div class="post-container">
+                <div class="autore">
+                    <div class="link-autore">
+                        <img src="assets/imgs/image06.png" alt="">
+                        <a href="#">Isaac Saul</a>                    
+                    </div>
+                        <!--<div class="tooltiptext">
+                            <img src="assets/imgs/image06.png" alt="">
+                            <a href="#">Isaac Saul</a>
+                            <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
+                            </div>-->
+    
+                            <div class="lorem-box-7s">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, lorem ipsum dolor sit</p>
+                                <p>Oct 12 &#183; 11 min read</p>
+                            </div>
+                </div>
+                <div class="img-post"></div>
+            </div>
+    
+            <div class="post-container">
+                <div class="autore">
+                    <div class="link-autore">
+                        <img src="assets/imgs/image06.png" alt="">
+                        <a href="#">Isaac Saul</a>                    
+                    </div>
+                        <!--<div class="tooltiptext">
+                            <img src="assets/imgs/image06.png" alt="">
+                            <a href="#">Isaac Saul</a>
+                            <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
+                            </div>-->
+    
+                            <div class="lorem-box-7s">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, lorem ipsum dolor sit</p>
+                                <p>Oct 12 &#183; 11 min read</p>
+                            </div>
+                </div>
+                <div class="img-post"></div>
+            </div>
+    
+            <div class="post-container">
+                <div class="autore">
+                    <div class="link-autore">
+                        <img src="assets/imgs/image06.png" alt="">
+                        <a href="#">Isaac Saul</a>                    
+                    </div>
+                        <!--<div class="tooltiptext">
+                            <img src="assets/imgs/image06.png" alt="">
+                            <a href="#">Isaac Saul</a>
+                            <p>Lorem ipsum dolor sit amet consectetur - <a href="http://www.google.it"></a></p>
+                            </div>-->
+    
+                            <div class="lorem-box-7s">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, lorem ipsum dolor sit</p>
+                                <p>Oct 12 &#183; 11 min read</p>
+                            </div>
+                </div>
+                <div class="img-post"></div>
+            </div>
+        </div>
+
+
+        <!--_________ASIDE_________-->
+
+        <aside class="aside">
+            <h3>Discover more of what matters to you</h3>
+            
+            <div id="aside-container" class="aside-cont">
+                <a href="#" class="aside-link">Programming</a>
+                <a href="#" class="aside-link">Data Science</a>
+                <a href="#" class="aside-link">Technology</a>
+                <a href="#" class="aside-link">Self Improvement</a>
+                <a href="#" class="aside-link">Writing</a>
+                <a href="#" class="aside-link">Relationships</a>
+                <a href="#" class="aside-link">Machine Learning</a>
+                <a href="#" class="aside-link">Productivity</a>
+                <a href="#" class="aside-link">Politics</a>
+            </div>
+            
+            <a href="#" id="link-topics">See more topics</a>
+    
+    
+            <div id="footer-container">
+                <a href="#">Help</a>
+                <a href="#">Status</a>
+                <a href="#">Writers</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">About</a>
+                <a href="#">Knowable</a>
+            </div>
+        </aside>
+
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
