@@ -34,7 +34,7 @@ img{
     background-color: var(--bianco);
 }
 
-.header-container{
+.contein{
     display: flex;
     justify-content: space-between;
     align-items: center;
