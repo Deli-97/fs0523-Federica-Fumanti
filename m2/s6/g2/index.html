@@ -9,7 +9,7 @@
 <body>
 
     <!--_______HEADER______-->
-    <header class="navbar bg-light navbar-expand-sm py-3 mb-4 border-bottom">
+    <header class="navbar bg-light navbar-expand-lg py-3 mb-4 border-bottom">
         <div class="container">
             <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" href="#">
                 <img src="assets/imgs/travel logo travel agency adventure_3628162.png" alt="logo" width="60" height="32" class="d-block my-1 img-fluid">
@@ -37,7 +37,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search">
+                    <input id="form-input" class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search">
                     <button class="btn btn-outline-danger" type="submit">Cerca</button>
                 </form>
             </div>
@@ -45,16 +45,24 @@
     </header>
     <!--_______MAIN_______-->
     <main>
-        <div class="container bg-secondary p-4 my-4 bg-light">
-            <h1>Eveline-R <span class="fs-6">-Feel the freedom</span></h1>
-            <hr class="m-0">
-            <p class="fst-italic mb-4">Scopri le destinazioni più calde del momento!</p>
-            <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .9rem; --bs-btn-font-size: .75rem;">Prenota ora</button>
+        <div class="container">
+            <section class="row my-5 rounded bg-light p-4 text-secondary" id="">
+                <div class="col-12 d-flex align-items-center justify-content-center-md">
+                    <h1 class="display-1 fw-thin text-center-md">Eveline-R</h1><span class="fs-5">-Feel the freedom</span>
+                </div>
+                <div class="col-12 bg-light border border-top-1 border-end-0 border-bottom-0 border-start-0">
+                    <p class="fs-3 fst-italic p-2">Scopri le destinazioni più calde del momento!</p>
+                    <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .9rem; --bs-btn-font-size: .75rem;">Prenota ora</button>
+                </div>
+            </section>
         </div>
 
         <section id="card-list" class="py-5">
             <div class="container-fluid">
-                <h5>Saldi</h5>
+                <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
+                    <h5>Saldi</h5>
+                    <a href="#" class="text-info text-decoration-none">Nascondi sezione</a>
+                </div>
                 <div class="row">
                     <div class="col-12 col-md-4 col-lg-3 col-xl-3 py-3">
                         <div class="card">
@@ -89,8 +97,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-4 d-md-none col-lg-3 col-xl-3 py-3">
-                        
+                    <div class="col-12 col-md-4 d-md-none d-lg-block col-lg-3 col-xl-3 py-3">
                         <div class="card">
                             <img src="assets/imgs/e4f5b73c42b42b417759536523a693cf02ec51aa-7486x5147.jpg" class="card-img-top" alt="japan">
                             <div class="card-body">
@@ -103,13 +110,16 @@
                 </div>
             </div>
         </section>
-
+        <!--_______WELCOME SUMMER_______-->
         <section id="card-list" class="py-5">
             <div class="container-fluid">
-                <h5>Welcome Summer</h5>
+                <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
+                    <h5>Welcome Summer</h5>
+                    <a href="#" class="text-info text-decoration-none">Nascondi sezione</a>
+                </div>
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-2 py-3">
-                        <div class="card">
+                        <div class="card border border-0 border-round shadow-lg mb-lg-4">
                             <img src="assets/imgs/Japan-2107x1406.jpg" class="card-img-top" alt="japan">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -120,7 +130,7 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-2 py-3">
-                        <div class="card">
+                        <div class="card border border-0 border-round shadow-lg mb-lg-4">
                             <img src="assets/imgs/extratimeblog.it-isole_thailandia_1280x853.jpg" class="card-img-top" alt="japan">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -131,7 +141,7 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-2 py-3">
-                        <div class="card">
+                        <div class="card border border-0 border-round shadow-lg mb-lg-4">
                             <img src="assets/imgs/istockphoto-1406960186-612x612.jpg" class="card-img-top" alt="japan">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -142,7 +152,7 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-2 py-3">
-                        <div class="card">
+                        <div class="card border border-0 border-round shadow-lg mb-lg-4">
                             <img src="assets/imgs/e4f5b73c42b42b417759536523a693cf02ec51aa-7486x5147.jpg" class="card-img-top" alt="japan">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -153,8 +163,8 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-2 py-3">
-                        <div class="card">
-                            <img src="assets/imgs/e4f5b73c42b42b417759536523a693cf02ec51aa-7486x5147.jpg" class="card-img-top" alt="japan">
+                        <div class="card border border-0 border-round shadow-lg mb-lg-4">
+                            <img src="assets/imgs/istockphoto-1406960186-612x612.jpg" class="card-img-top" alt="japan">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -164,8 +174,8 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-2 py-3">
-                        <div class="card">
-                            <img src="assets/imgs/e4f5b73c42b42b417759536523a693cf02ec51aa-7486x5147.jpg" class="card-img-top" alt="japan">
+                        <div class="card border border-0 border-round shadow-lg mb-lg-4">
+                            <img src="assets/imgs/extratimeblog.it-isole_thailandia_1280x853.jpg" class="card-img-top" alt="japan">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -174,6 +184,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="offerta-del-giorno">
+            <div class="row">
+                <div class="col-lg-8 col-6">
+                    <img src="assets/imgs/maldives-photo-gallery-part1.jpg" alt="Maldive" width="100%" class="rounded shadow-sm">
+                </div>
+                <div class="col-lg-4 col-6">
+                    <p class="display-1">Fushifaru Maldives</p>
+                    <p class="display-1 fs-5">15.01.2021-31.01.2021</p>
+                    <p class="display-1 fs-1">Ville a partire da 500$, non fartele sfuggire!</p>
+                </div>
+            </div>
         </section>
     </main>
 
