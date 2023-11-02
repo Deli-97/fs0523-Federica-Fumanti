@@ -1,3 +1,4 @@
+@import 'reset';
 @import 'colori';
 @import 'font';
 @import 'spaziature';
@@ -24,45 +25,18 @@ img{
 
     nav{
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
     ul{
         display: flex;
         list-style: none;
     a{
-        padding: 10px;
-        color: map-get($color-map, bianco);
+        color: map-get($color-map, nero);
         text-decoration: none;
-        background-color: #0066CC;
-        font-size: nth($list: $sizes, $n: 3);
-        border-radius: 10px;
+        font-size: nth($list: $sizes, $n: 4);
+        display: flex;
+        font-size: 20px;
+        justify-content: space-evenly;
     }
 }
 }
-
-.btn-container{
-    display: flex;
-}
-
-.btn{
-    font-family: $font;
-    font-size: 16px;
-    color: map-get($map: $color-map, $key:bianco );
-    background-color: #0066CC;
-    padding: 10px 25px;
-    border: none;
-    box-shadow: map-get($map: $color-map, $key:nero );
-    border-radius: 50px;
-    transition : 1000ms;
-    transform: translateY(0);
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-        &:hover{
-            transition : 1000ms;
-            padding: 10px 40px;
-            transform : translateY(-0px);
-            background-color: #0066CC;
-            color: #ffffff;
-            border: none;
-}}
