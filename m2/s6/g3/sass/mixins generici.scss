@@ -1,0 +1,7 @@
+@mixin coloreDinamico($tema : 'dark', $colore){
+    @if($tema == 'dark'){
+        background-color: darken($colore, 10);
+    }@else{
+        background-color: lighten($colore, 10);
+    }
+}
