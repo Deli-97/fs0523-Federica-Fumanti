@@ -12,11 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const giocatore1 = parseInt(player1Input.value);
         const giocatore2 = parseInt(player2Input.value);
 
-        if (isNaN(giocatore1) || isNaN(giocatore2)) {
-            outputParagraph.textContent = "Inserisci numeri validi per entrambi i giocatori.";
-            return;
-        }
-
         const numeroCasuale = Math.floor(Math.random() * 100) + 1;
 
         const diffGiocatore1 = Math.abs(numeroCasuale - giocatore1);
