@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TodosComponent } from './Pages/todos/todos.component';
 import { CompletatiComponent } from './Pages/completati/completati.component';
 import { HeaderComponent } from './Header/header/header.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,10 @@ import { HeaderComponent } from './Header/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

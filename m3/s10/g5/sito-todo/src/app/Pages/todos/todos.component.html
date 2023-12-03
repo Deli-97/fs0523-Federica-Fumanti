@@ -1,1 +1,22 @@
 <p>todos works!</p>
+<form>
+  <input type="text" placeholder="New To Do" [(ngModel)]="newTodo.title" name = "todo">
+  <button (click)="save()">Salva</button>
+</form>
+
+
+<div class="caricamento loader" *ngIf="caricamento">
+  Caricamento in corso...
+</div>
+
+<div class="eliminazione loader" *ngIf="eliminazione">
+  Eliminazione in corso...
+</div>
+
+<div class="todoArr" *ngFor="let t of todoArr">
+  <p>{{t.title}}</p>
+  <div>
+    <button class="completato" (click)="toggleStatus(t.id)">Completato</button>
+    <button class="elimina" (click)="elimina(t.id)">Elimina</button>
+  </div>
+</div>
